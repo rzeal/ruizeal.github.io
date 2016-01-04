@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>展馆</title>
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+
+    <script src="../javascript/jQuery.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>win8扁平风格网站侧边栏在线客服 - 站长素材</title>
+
+    <link rel="stylesheet" href="../css/top.css" type="text/css" />
+
+    <script src="../javascript/top.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".side ul li").hover(function(){
+                $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})
+            },function(){
+                $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+            });
+
+        });
+
+        //回到顶部
+        function goTop(){
+            $('html,body').animate({'scrollTop':0},600);
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+<!-------------header-begin-------------------->
+<div class="headero">
+    <div class="logoo_bg">
+
+        <div class="logoo">
+            <img src="../images/logoA.png">
+        </div>
+
+        <div class="banner-bg">
+            <div class="banner">
+                <ul>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="#">展讯</a></li>
+                    <li><a href="act.html">活动</a></li>
+                    <li><a href="present.html">礼品</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------header-end-------------------->
+
+<!-------------showroom-begin-------------------->
+
+<div class="showroom_bg">
+    <div class="showroom">
+        <div class="showroomA">
+            <img class="Xa" src="../images/showroom_Xa.jpg" width="507px">
+            <img class="dh" src="../images/showroom_dh.jpg" width="507px">
+        </div>
+
+
+
+        <div class="showroomB"></div>
+        <div class="showroomC"></div>
+        <div class="showroomD">
+            <img class="nj" src="../images/showroom_nj.jpg" width="507px">
+        </div>
+        <div class="showroomE">
+            <img class="bj" src="../images/showroom_bj.jpg" width="507px">
+        </div>
+
+
+
+    </div>
+</div>
+
+<!-------------showroom-end-------------------->
+
+<!-------------gotop-begin-------------------->
+
+<div class="side">
+    <ul>
+        <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="../images/side_icon05.png"></a></li>
+    </ul>
+</div>
+
+<!-------------gotop-end-------------------->
+
+<div class="footer" id="foot">
+    <span style="text-align: center;display: block; padding-top: 35px; font-size: 14px;">版权所有 © 2015 苏ICP备15063090号丨 <a href=mailto:zyl15861312551@126.com>联系我们</a></span>
+</div>
+
+
+</body>
+</html>

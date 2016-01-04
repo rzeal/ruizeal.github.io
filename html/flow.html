@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>票务预约与流量查询</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/jQuery.js"></script>
+    <script src="../javascript/jquery-2.0.0.min.js"></script>
+    <script src="../javascript/jquery-2.0.0.js"></script>
+    <script src="../javascript/jquery-2.0.0.jzs.js"></script>
+    <script src="../javascript/jquery-2.0.0.min.js"></script>
+    <script src="../javascript/jquery-2.0.0.min.jzs.js"></script>
+
+    <script type="text/javascript">
+        function ale()
+        {
+            alert("您已成功报名，感谢您的支持！");
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".oh").click(function(){
+                $("#yes").show(1000);
+                $("#no1").hide(500);
+                $("#no2").hide(500);
+                $("#no3").hide(500);
+                $("#no4").hide(500);
+            });
+        });
+        $(document).ready(function(){
+            $("#delete").click(function(){
+                $("#yes").hide(1000);
+                $("#no1").show(500);
+                $("#no2").show(500);
+                $("#no3").show(500);
+                $("#no4").show(500);
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+<!-------------header-begin-------------------->
+<div class="headero">
+    <div class="logoo_bg">
+
+        <div class="logoo">
+            <img src="../images/logoA.png">
+        </div>
+
+        <div class="banner-bg">
+            <div class="banner">
+                <ul>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="showroom.html">展讯</a></li>
+                    <li><a href="act.html">活动</a></li>
+                    <li><a href="present.html">礼品</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------header-end-------------------->
+
+<!-------------flowandticket-begin-------------------->
+<div class="flow-bg">
+    <div class="flow">
+        <span class="flowtitle">流&nbsp&nbsp量&nbsp&nbsp查&nbsp&nbsp询</span>
+        <span class="flowtitlesecond">全国各博物馆实时流量查询</span>
+        <div class="flowmove">
+            <div class="Beijing">
+                <span class="oh"  type="button" style="font-size: 84px;position: relative;top: -17px;left: 39px; color: #E0BF86;">北<br>京</span>
+                <div class="Beijingperson" id="no1">
+                    <span style="display: block;text-align: center;font-size: 16px;padding-top: 50px;color: #666;">天气：多云有霾<br><br>当日人次：10088<br><br>建议出行与否：不建议</span>
+                    <img src="../images/flowone.png" style="width: 85px;position: relative;left: 503px;">
+                </div>
+            </div>
+
+            <div class="Nanjing" >
+                <span class="oh"  type="button" style="font-size: 84px;position: relative;top: -17px;left: 106px; color: #A07830;">南<br>京</span>
+                <div class="Nanjingperson" id="no2">
+                    <span style="display: block;text-align: center;font-size: 16px;padding-top: 50px;color: #666;">天气：晴<br><br>当日人次：7522<br><br>建议出行与否：建议</span>
+                    <img src="../images/flowsecond.png" style="width: 90px;position: relative;left: -45px;top: 14px;z-index: 989;">
+                </div>
+            </div>
+
+            <div class="Xian" >
+                <span class="oh"  type="button" style="font-size: 84px;position: relative;top: -17px;left: 39px; color: #F2D89F;">西<br>安</span>
+                <div class="Xianperson" id="no3">
+                    <span style="display: block;text-align: center;font-size: 16px;padding-top: 50px;color: #666;">天气：中雨<br><br>当日人次：4280<br><br>建议出行与否：不建议</span>
+                </div>
+            </div>
+
+            <div class="Dunhuang"  >
+                <span class="oh" type="button" style="font-size: 84px;position: relative;top: -17px;left: 106px; color: #BC8B35;">敦<br>煌</span>
+                <div class="Dunhuangperson" id="no4">
+                    <span style="display: block;text-align: center;font-size: 16px;padding-top: 50px;color: #666;">天气：晴<br><br>当日人次：2346<br><br>建议出行与否：建议</span>
+                    <img src="../images/flowthird.png" style="width: 180px;position: relative;left: 673px;top: -70px;">
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <img class="shou" src="../images/shou.png" style="width: 150px;position: relative;top: -65px;margin: 0 auto;display: block;">
+            </div>
+        </div>
+
+
+        <div class="appoint-bg"  id="yes">
+            <div class="appoint">
+                <a id="delete" type="button" style="position: relative;left: 450px;top: 16px;"><img src="../images/delete.png"></a>
+                <span style="display: block; text-align: center;font-size: 35px;padding-top: 56px;">在线预约</span>
+                <form action="#" method="get" class="appointonline">
+                    <p style="font-size: 25px;">城市：<input type="text" name="nam"  style="border:0;border-bottom: 1px solid #333; margin-left: 25px;"/></p>
+                    <p style="font-size: 25px;">时间：<input type="date" name="phone" max="11" min="11" style="border:0;border-bottom: 1px solid #333; margin-left: 25px; width: 250px; " /></p>
+                    <p style="font-size: 25px;">姓名:<input type="text" name="mail" style="border:0;border-bottom: 1px solid #333; margin-left: 43px"  /></p>
+                    <p style="font-size: 25px;">身份证：<input type="text" name="nam"  style="border:0;border-bottom: 1px solid #333; margin-left: 0px"/></p>
+                    <p style="font-size: 25px;">手机：<input type="phone" name="phone" max="11" min="11" style="border:0;border-bottom: 1px solid #333; margin-left: 25px;" /></p>
+                    <p style="font-size: 30px; margin-top: 12px;text-align: center;display: block;padding-right: 66px;">
+                        <input  name="poll_id" value="提&nbsp;交" id="submit" type="submit" width="211" height="49"  onclick="ale()" style="width: 90px;height: 50px;border: 1px solid #333; background-color: #d6c97f;"/></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------flowandticket-end-------------------->
+
+
+
+</body>
+</html>
